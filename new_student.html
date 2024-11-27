@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Student</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <a href="home.html">Back to Home Page</a>
+        <div id="formMain">
+            <!-- display the form on clicking the button -->
+            <button id="addStudentButton">Add a new student</button>
+            <div id="newStudentFormContainer">
+                <form action="" id="newStudentForm" onsubmit="validateForm()">
+                    <!-- your form goes here -->
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" value="name:/^[A-Za-z]+(?: [A-Za-z]+)*$/"><br><br>
+                    <label for="std ID">Student ID: </label>
+                    <input type="text" id="std ID" name="student ID" value="std ID:/^[a-zA-Z0-9]{7}$/"><br><br>
+                    <label for="Age">Age: </label>
+                    <input type="Age" id="Age" name="Age"><br><br>
+                    <label for="email">email: </label>
+                    <input type="email" id="email" name="email" value="email:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/"><br><br>
+                    <h5>Choose your gender: </h5>
+                    <input type="radio" id="female" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="others" value="others">
+                    <label for="others">others</label><br><br>
+                    <label for="course">Choosea program: </label>
+                    <select>
+                        <option value="DCSN">DCSN</option>
+                        <option value="DMA">DMA</option>
+                    </select>
+                    <h5>Choose at least one hobby: </h5>
+                    <input type="checkbox" id="dancing" value="dancing">
+                    <label for="dancing">Dancing</label>
+                    <input type="checkbox" id="sleeping" value="sleeping">
+                    <label for="sleeping">Sleeping</label>
+                    <input type="checkbox" id="musci" value="music">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="others" value="others">
+                    <label for="others">Others</label><br><br>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">   
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
+    </body>
+</html>
